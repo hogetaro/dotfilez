@@ -1,0 +1,25 @@
+
+startup_message off
+shelltitle '$ |*'
+
+
+escape ^t^t
+# hardstatus alwayslastline '%{= kw}%02c:%s %{= .y}%H %L=%{= .b}%-w%46>%{= .r}%n %t*%{= .b}%+w%-16=%{= .y}[%l]'
+hardstatus alwayslastline "%{.bW}%-w%{.rW}%n %t%{-}%+w %=%{..G} %H %{..Y} %Y %m/%d %C%a "
+
+# caption always "%{= mw} %-w%{=b cw}%n %t%{-}%+w %= %{=b mw}%y/%m/%d"
+autodetach on
+
+defutf8 on
+defkanji utf-8
+encoding utf-8 utf-8
+defencoding utf-8
+
+bind ^t other
+bind j focus down
+bind k focus up
+bind t focus top
+bind b focus bottom
+bind l focus right
+bind h focus left
+
